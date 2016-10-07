@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Movie Seeker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/easy-autocomplete.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script src="js/jquery.easy-autocomplete.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="alert alert-info text-center">
+      <h1>Movie Search App</h1>
+      <h4><span class="powered">powered by </span><a href="https://www.viki.com/">Viki.com</a></h4>
+
+    </div>
+    <br>
+    <div class="inputData">
+      <label class="">Title: </label>
+      <input type="text" class="title" id="auto">
+    </div>
+    <hr>
+
+    <section id="showup">
+      <div id="selectedOutput">
+        Choose a movie.
+      </div>
+      <div id="info"></div>
+    </section>
+
+    <!-- template for search -->
+    <div class="panel panel-primary movieListStyle movieLists">
+      <div class="panel-heading">
+        <h4 class="movieTitle"></h4>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-4 col-md-4">
+            <div class="thumbnail">
+              <img src="" alt="" class="poster">
+            </div>
+            <div class="caption">
+              <p>Click to read a description</p>
+            </div>
+          </div>
+          <div class="col-xs-8 col-md-8">
+            <div>Title: <span class="title"></span></div>
+            <div>Title (TF): <span class="tf"></span></div>
+            <div>Title (TE): <span class="te"></span></div>
+            <div>Title (TJ): <span class="tj"></span></div>
+            <div>Id: <span class="id"></span></div>
+            <div>Type: <span class="type"></span></div>
+            <div>Country: <span class="oc"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end     -->
+
+    <!-- template for title -->
+    <div class="panel panel-info info titleInfo">
+      <div class="panel-heading">
+        <div class='row'>
+          <div class="col-xs-6 col-md-6">
+            <h4 class="">Movie infomation:</h4>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <div><a href="" class="btn btn-warning infoWatch">watch now!!</a></div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <div>Description:
+              <article class="infodesc"></article>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+
+</body>
+</html>
